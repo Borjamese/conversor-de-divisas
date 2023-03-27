@@ -14,11 +14,11 @@ const fromDollarToYen = function(valueInDollar){
     return valueInYen;
 }
 
-const fromYenToPound = function(valueInYen)){
+const fromYenToPound = function(valueInYen){
     // convert the given valueInEuro to dollars
-    let valueInPound = valueInYen * 0.8/1.2;
+    let valueInPound = valueInYen * (1/127.9) * 0.8;
     //return the dollar value
-    return valueInYen;
+    return valueInPound;
 }
 
 
@@ -29,4 +29,4 @@ let oneEuroIs = {
     "GBP": 0.8, // british pound
 }
 
-module.exports = { fromEuroToDollar, fromDollarToYen }
+module.exports = { fromEuroToDollar, fromDollarToYen, fromYenToPound }
